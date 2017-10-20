@@ -1,8 +1,6 @@
 <template>
 <transition name="slide">
-  <div class="singer-detail">
-    <music-list :songs="songs" :title="title" :bg-image="bgImage"></music-list>
-  </div>
+  <music-list :songs="songs" :title="title" :bg-image="bgImage"></music-list>
 </transition>
 </template>
 
@@ -62,14 +60,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~common/scss/variable";
 
 .slide-enter-active,
-.slide-leave-active {
-  transition: all 0.3s;
+.slide-leave-active{
+  transition: all 0.3s
 }
+
 .slide-enter,
 .slide-leave-to {
-  transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0)
 }
 </style>
